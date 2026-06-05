@@ -17,11 +17,12 @@ Future pages should be built by replacing content, images, SEO data and local re
 ## Page Creation Workflow
 
 1. Duplicate `templates/reusable-page-template.html`.
-2. Rename it to the target slug, for example `driving-school-moorebank.html`.
-3. Replace the `{{TOKENS}}`.
-4. Swap in suburb-specific copy, routes, images, packages, FAQs and test centres.
-5. Keep the class names, section ids and `js/main.js` include.
-6. Remove a whole optional section only if the page genuinely does not need it.
+2. Create a dedicated folder for the page slug, for example `driving-school-moorebank/`.
+3. Save the copied file as `driving-school-moorebank/index.html`.
+4. Replace the `{{TOKENS}}`.
+5. Swap in suburb-specific copy, routes, images, packages, FAQs and test centres.
+6. Keep the class names, section ids and `../js/main.js` include.
+7. Remove a whole optional section only if the page genuinely does not need it.
 
 ## Template Structure
 

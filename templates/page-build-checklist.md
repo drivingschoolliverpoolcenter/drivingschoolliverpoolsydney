@@ -5,6 +5,8 @@ Use this checklist whenever you turn the reusable shell into a real page.
 ## Before Writing Copy
 
 - choose the target page slug
+- create a dedicated folder for that slug
+- place the page at `slug/index.html`
 - confirm the primary topic, suburb and search intent
 - choose the hero, about, coverage and final CTA images
 - confirm the phone CTA format and destination
