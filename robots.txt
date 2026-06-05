@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Disallow: /CLAUDE.md
+Disallow: /templates/
+Disallow: /skill-main/
+Disallow: /taste-skill-main/
+Disallow: /Impeccable-skill/
+Disallow: /SKILL.md
+Disallow: /.claude/
+
+Sitemap: https://www.drivingschoolliverpool.sydney/sitemap.xml

@@ -1,0 +1,19 @@
+## Claude Code project instructions — keep off GitHub
+CLAUDE.md
+
+## Templates — local use only, keep off GitHub
+templates/
+
+## Development and skill scaffolding — not for production
+skill-main/
+taste-skill-main/
+Impeccable-skill/
+SKILL.md
+
+## OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+.vscode/
