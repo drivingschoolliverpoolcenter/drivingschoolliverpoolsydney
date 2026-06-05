@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driving Lessons Edmondson Park | Automatic Lessons and Test Preparation</title>
+  <meta name="description" content="Book structured automatic driving lessons in Edmondson Park with a government-accredited local instructor. Calm one-on-one lessons, Liverpool test route preparation, and flexible lesson packages.">
+  <link rel="canonical" href="https://www.drivingschoolliverpool.sydney/driving-lessons-edmondson-park/">
+  <link rel="icon" type="image/png" href="../img/driving-lessons-fav.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Driving Lessons Edmondson Park | Automatic Lessons and Test Preparation">
+  <meta property="og:description" content="Structured driving lessons in Edmondson Park for beginners, nervous learners, adult students and local driving test preparation.">
+  <meta property="og:url" content="https://www.drivingschoolliverpool.sydney/driving-lessons-edmondson-park/">
+  <meta property="og:image" content="https://www.drivingschoolliverpool.sydney/img/learner-driver-lessons-liverpool-sydney-south-driving-school.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <style>
+    .service-page-hero {
+      background:
+        linear-gradient(110deg, rgba(24, 27, 31, 0.9) 0%, rgba(24, 27, 31, 0.82) 48%, rgba(24, 27, 31, 0.35) 100%),
+        url("../img/learner-driver-lessons-liverpool-sydney-south-driving-school.jpg") center right / cover no-repeat;
+      color: #fff;
+    }
+
+    .service-page-hero .page-hero__grid {
+      min-height: 34rem;
+      align-items: center;
+    }
+
+    .service-proof-strip {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: -2.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-proof-strip__item,
+    .service-panel,
+    .service-card,
+    .service-route-card,
+    .service-fit-card,
+    .service-faq-item {
+      background: #fff;
+      border: 1px solid rgba(27, 31, 36, 0.1);
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(17, 24, 39, 0.08);
+    }
+
+    .service-proof-strip__item {
+      padding: 1.25rem;
+    }
+
+    .service-proof-strip__label {
+      color: #6b7280;
+      display: block;
+      font-size: 0.875rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .service-proof-strip__value {
+      color: #111827;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .service-split {
+      align-items: center;
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1.1fr 0.9fr;
+    }
+
+    .service-panel {
+      padding: 1.5rem;
+    }
+
+    .service-panel--dark {
+      background: #1f242c;
+      border-color: rgba(255, 255, 255, 0.06);
+      color: #f5f7fb;
+    }
+
+    .service-panel--dark h2,
+    .service-panel--dark h3,
+    .service-panel--dark p,
+    .service-panel--dark li {
+      color: inherit;
+    }
+
+    .service-media {
+      border-radius: 20px;
+      min-height: 100%;
+      overflow: hidden;
+    }
+
+    .service-media img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .service-checklist,
+    .service-route-list,
+    .service-fit-list,
+    .service-focus-list {
+      display: grid;
+      gap: 0.85rem;
+      list-style: none;
+      margin: 1.25rem 0 0;
+      padding: 0;
+    }
+
+    .service-checklist li,
+    .service-route-list li,
+    .service-fit-list li,
+    .service-focus-list li {
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .service-checklist li::before,
+    .service-route-list li::before,
+    .service-fit-list li::before,
+    .service-focus-list li::before {
+      color: #ffd200;
+      content: "■";
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    .service-card-grid,
+    .service-fit-grid,
+    .service-route-grid,
+    .service-area-grid {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .service-card {
+      overflow: hidden;
+    }
+
+    .service-card img {
+      aspect-ratio: 16 / 10;
+      display: block;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .service-card__body,
+    .service-fit-card,
+    .service-route-card,
+    .service-faq-item {
+      padding: 1.35rem;
+    }
+
+    .service-card h3,
+    .service-fit-card h3,
+    .service-route-card h3,
+    .service-panel h2,
+    .service-panel h3,
+    .service-faq-item h3 {
+      margin-bottom: 0.65rem;
+    }
+
+    .service-fit-card--muted {
+      background: #f4f6f8;
+      border-style: dashed;
+      box-shadow: none;
+    }
+
+    .service-pricing-grid {
+      display: grid;
+      gap: 1.25rem;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .service-price-card {
+      background: #fff;
+      border: 1px solid rgba(27, 31, 36, 0.12);
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(17, 24, 39, 0.08);
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      padding: 1.4rem;
+    }
+
+    .service-price-card__price {
+      color: #111827;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1;
+      margin: 1rem 0 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .service-price-card .btn {
+      margin-top: auto;
+    }
+
+    .service-eyebrow {
+      align-items: center;
+      color: #d97706;
+      display: inline-flex;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      gap: 0.65rem;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.85rem;
+      text-transform: uppercase;
+    }
+
+    .service-eyebrow::before {
+      background: #ffd200;
+      border-radius: 999px;
+      content: "";
+      display: inline-block;
+      height: 0.28rem;
+      width: 2.2rem;
+    }
+
+    .service-accreditation-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      margin-top: 1.5rem;
+    }
+
+    .service-accreditation-card {
+      align-items: center;
+      background: #fff;
+      border: 1px solid rgba(27, 31, 36, 0.12);
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(17, 24, 39, 0.08);
+      display: flex;
+      justify-content: center;
+      min-height: 9rem;
+      padding: 1rem;
+    }
+
+    .service-accreditation-card img {
+      display: block;
+      max-height: 5rem;
+      max-width: 100%;
+      object-fit: contain;
+      width: auto;
+    }
+
+    .service-area-grid article {
+      background: #fff;
+      border: 1px solid rgba(27, 31, 36, 0.12);
+      border-radius: 16px;
+      padding: 1rem 1.1rem;
+      text-align: center;
+    }
+
+    .service-faq-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (max-width: 1100px) {
+      .service-proof-strip,
+      .service-pricing-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .service-card-grid,
+      .service-fit-grid,
+      .service-route-grid,
+      .service-accreditation-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 900px) {
+      .service-split {
+        grid-template-columns: 1fr;
+      }
+
+      .service-area-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .service-proof-strip,
+      .service-card-grid,
+      .service-fit-grid,
+      .service-route-grid,
+      .service-pricing-grid,
+      .service-accreditation-grid,
+      .service-area-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.drivingschoolliverpool.sydney/#business",
+        "name": "Driving School Liverpool Centre",
+        "alternateName": "Sydney South Driving School Liverpool",
+        "image": "https://www.drivingschoolliverpool.sydney/img/driving-lessons-liverpool-center.png",
+        "url": "https://www.drivingschoolliverpool.sydney/",
+        "telephone": "+61-2-8776-1815",
+        "email": "liverpool@sydneysouth.net",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Liverpool",
+          "addressRegion": "NSW",
+          "postalCode": "2170",
+          "addressCountry": "AU"
+        },
+        "areaServed": [
+          "Edmondson Park NSW",
+          "Prestons NSW",
+          "Horningsea Park NSW",
+          "Denham Court NSW",
+          "Leppington NSW",
+          "Liverpool NSW",
+          "Casula NSW"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.drivingschoolliverpool.sydney/#ashraf-george",
+        "name": "Ashraf George",
+        "jobTitle": "Driving Instructor",
+        "worksFor": {
+          "@id": "https://www.drivingschoolliverpool.sydney/#business"
+        },
+        "url": "https://www.sydneysouth.net/author/admin/"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.drivingschoolliverpool.sydney/driving-lessons-edmondson-park/#service",
+        "name": "Driving Lessons Edmondson Park",
+        "serviceType": "Automatic driving lessons",
+        "provider": {
+          "@id": "https://www.drivingschoolliverpool.sydney/#business"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "Edmondson Park NSW"
+        },
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://sydneysouth.appointy.com/",
+          "telephone": "+61-2-8776-1815"
+        },
+        "description": "One-on-one automatic driving lessons in Edmondson Park with structured lesson plans, Liverpool test route preparation, mock driving tests and flexible lesson scheduling."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.drivingschoolliverpool.sydney/driving-lessons-edmondson-park/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much do driving lessons in Edmondson Park cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Current lesson options include one hour lessons from $80, two hour lessons from $150, a 5 hour package from $370 and a 10 hour package from $700. Car hire and extended packages are also available."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer automatic driving lessons in Edmondson Park?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Lessons are provided in dual-controlled, fully insured automatic vehicles, which suits beginners, nervous learners, adult students and local driving test preparation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you help with Liverpool driving test preparation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Lessons can include route planning, observation practice, parking, lane positioning, roundabouts, hazard awareness and mock driving tests based on the local Liverpool test environment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are lessons suitable for adult learners and overseas licence holders?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Lessons are structured for first-time learners, adults returning to driving, nervous drivers and people adapting to local road rules and test expectations in South West Sydney."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="../index.html" aria-label="Driving School Liverpool Centre home">
+        <img class="brand__logo" src="../img/driving-lessons-liverpool-center.png" alt="Driving School Liverpool Centre">
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../about-us/index.html">About</a>
+        <a href="#packages">Packages</a>
+        <a href="#areas">Service Area</a>
+        <a href="#faq">FAQ</a>
+        <a href="../contact-us/index.html">Contact</a>
+      </nav>
+      <a class="btn btn--header" href="https://sydneysouth.appointy.com/">Book driving lessons</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero service-page-hero">
+      <div class="container page-hero__grid">
+        <div class="page-hero__content">
+          <span class="service-eyebrow">Driving Lessons Edmondson Park</span>
+          <h1>Automatic driving lessons in Edmondson Park with a clear plan and calm local guidance</h1>
+          <p class="page-hero__lead">Learn in a dual-controlled automatic car with Ashraf George, a government-accredited instructor helping learners across Edmondson Park, Prestons, Horningsea Park, Denham Court and the wider Liverpool area build safe habits for life, not just for test day.</p>
+          <div class="page-hero__actions">
+            <a class="btn" href="https://sydneysouth.appointy.com/">Book driving lessons</a>
+            <a class="btn btn--ghost" href="tel:0287761815">Call (02) 8776 1815</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="service-proof-strip" aria-label="Key service highlights">
+          <article class="service-proof-strip__item">
+            <span class="service-proof-strip__label">Lesson type</span>
+            <strong class="service-proof-strip__value">Automatic</strong>
+          </article>
+          <article class="service-proof-strip__item">
+            <span class="service-proof-strip__label">Instructor fit</span>
+            <strong class="service-proof-strip__value">Beginners to test-ready</strong>
+          </article>
+          <article class="service-proof-strip__item">
+            <span class="service-proof-strip__label">Local focus</span>
+            <strong class="service-proof-strip__value">Edmondson Park and Liverpool routes</strong>
+          </article>
+          <article class="service-proof-strip__item">
+            <span class="service-proof-strip__label">Trust factors</span>
+            <strong class="service-proof-strip__value">Accredited, insured, checked</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container service-split">
+        <div class="service-panel">
+          <span class="service-eyebrow">Local lesson structure</span>
+          <h2>Driving lessons in Edmondson Park that match your stage, pace and local roads</h2>
+          <p>If you are just starting out, rebuilding confidence after a break, or getting ready for the Liverpool test environment, your lessons should feel organised from the first session. Each lesson focuses on the skill that matters next, whether that is moving off safely, steering control, lane positioning, parking, roundabouts, speed management, observation checks or mock test preparation.</p>
+          <p>Lessons are planned around the roads learners actually use in and around Edmondson Park. That can include quieter practice areas for first-time drivers, more active traffic exposure near Camden Valley Way and Cowpasture Road, and structured preparation for the conditions students face on the way to licence testing in Liverpool.</p>
+          <ul class="service-checklist">
+            <li>One-on-one automatic driving lessons in a dual-controlled vehicle</li>
+            <li>Clear lesson progression for beginner, intermediate and test-ready learners</li>
+            <li>Flexible sessions for school students, university schedules, shift workers and adults returning to driving</li>
+            <li>Local knowledge across Edmondson Park, Prestons, Denham Court, Leppington, Casula and Liverpool</li>
+          </ul>
+        </div>
+        <div class="service-media">
+          <img src="../img/learning-to-drive-in-parking-lot-driving-lessons-liverpool.jpg" alt="Learner driver practising with an instructor during a local lesson">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="fit">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <span class="section-heading__eyebrow">Who these lessons suit</span>
+          <h2>Best fit for learners who want proper guidance, not rushed seat time</h2>
+          <p>Driving lessons in Edmondson Park are most useful when the learner wants a real plan, local knowledge and steady improvement from one session to the next.</p>
+        </div>
+        <div class="service-fit-grid">
+          <article class="service-fit-card">
+            <h3>Good fit</h3>
+            <ul class="service-fit-list">
+              <li>Teen learners starting their logbook hours</li>
+              <li>Parents wanting a calm, structured instructor for their child</li>
+              <li>Adult learners who need confidence before driving alone</li>
+              <li>Overseas licence holders adapting to local road rules and test expectations</li>
+            </ul>
+          </article>
+          <article class="service-fit-card">
+            <h3>Common goals</h3>
+            <ul class="service-fit-list">
+              <li>Build safe habits from the first lesson</li>
+              <li>Improve parking, roundabouts and lane awareness</li>
+              <li>Prepare properly for Liverpool test routes</li>
+              <li>Learn local roads without being overwhelmed</li>
+            </ul>
+          </article>
+          <article class="service-fit-card service-fit-card--muted">
+            <h3>Not the right fit</h3>
+            <ul class="service-fit-list">
+              <li>Students looking for a rushed last-minute lesson with no structure</li>
+              <li>Learners who only want a car for test day without practice</li>
+              <li>People expecting made-up pass-rate promises or pressure sales tactics</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="coverage">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <span class="section-heading__eyebrow">Lesson coverage</span>
+          <h2>What is covered during Edmondson Park driving lessons</h2>
+          <p>Each lesson is adjusted to the learner, but the structure stays practical and focused on safe progress.</p>
+        </div>
+        <div class="service-card-grid">
+          <article class="service-card">
+            <img src="../img/service-nsw-learning-license-learner-driver-lessons-liverpool.jpg" alt="Learner licence support and beginner lesson planning">
+            <div class="service-card__body">
+              <h3>Beginner lesson planning</h3>
+              <p>Start with car controls, moving off, steering, braking, mirrors, scanning and calm low-pressure practice.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="../img/learner-driver-lessons-liverpool-smiling-student-holding-permit.jpg" alt="Adult learner and nervous driver support">
+            <div class="service-card__body">
+              <h3>Nervous driver support</h3>
+              <p>Lessons are broken into small steps so anxious learners can repeat each skill until it feels steady and familiar.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="../img/learner-driver-lessons-liverpool-parking-lot-success.jpg" alt="Parking and manoeuvre practice during local driving lessons">
+            <div class="service-card__body">
+              <h3>Parking and manoeuvres</h3>
+              <p>Reverse parking, kerbside parking, turns, observation checks and space judgment are practised with clear feedback.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="../img/learner-driver-lessons-liverpool-new-driver-successful-test.jpg" alt="Driving test preparation with a successful learner driver">
+            <div class="service-card__body">
+              <h3>Driving test preparation</h3>
+              <p>Local route preparation focuses on observation, hazard awareness, school zones, intersections and calm decision-making.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="../img/learner-driver-lessons-liverpool-sydney-south-driving-school.jpg" alt="Structured driving lesson with a local instructor">
+            <div class="service-card__body">
+              <h3>Local road familiarisation</h3>
+              <p>Students practise on a mix of local streets, busier connector roads and the surrounding Liverpool traffic environment.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img src="../img/learner-driver-lessons-liverpool-p-plate-success.jpg" alt="Learner driver progressing toward P plates">
+            <div class="service-card__body">
+              <h3>Mock tests and final polish</h3>
+              <p>Near test time, lessons tighten up on judgement, consistency and the small mistakes that often cost learners on the day.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="packages">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <span class="section-heading__eyebrow">Lesson packages</span>
+          <h2>Flexible lesson options for Edmondson Park learners</h2>
+          <p>Choose a simple one-off lesson, a longer practice session or a package that supports consistent local progress.</p>
+        </div>
+        <div class="service-pricing-grid">
+          <article class="service-price-card">
+            <h3>One Hour Lesson</h3>
+            <p>Best for a focused weekly lesson, a confidence reset or specific skill practice.</p>
+            <div class="service-price-card__price">$80</div>
+            <p>Good for beginners and local route top-ups.</p>
+            <a class="btn" href="https://sydneysouth.appointy.com/">Book lesson</a>
+          </article>
+          <article class="service-price-card">
+            <h3>Two Hour Lesson</h3>
+            <p>More time for local roads, multiple manoeuvres and deeper feedback in one session.</p>
+            <div class="service-price-card__price">$150</div>
+            <p>Useful before a test or after a long break from driving.</p>
+            <a class="btn" href="https://sydneysouth.appointy.com/">Book lesson</a>
+          </article>
+          <article class="service-price-card">
+            <h3>5 Hour Package</h3>
+            <p>For learners who want consistent weekly progress and a clearer short-term plan.</p>
+            <div class="service-price-card__price">$370</div>
+            <p>Often suits nervous learners and parents organising a block of lessons.</p>
+            <a class="btn" href="https://sydneysouth.appointy.com/">Buy package</a>
+          </article>
+          <article class="service-price-card">
+            <h3>10 Hour Package</h3>
+            <p>Built for steady habit-building, route work and broader test preparation.</p>
+            <div class="service-price-card__price">$700</div>
+            <p>Helpful when the goal is solid preparation, not rushed last-minute practice.</p>
+            <a class="btn" href="https://sydneysouth.appointy.com/">Buy package</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="routes">
+      <div class="container service-split">
+        <div class="service-media">
+          <img src="../img/Learner-driver-training-wilby-street.jpg" alt="Local learner driver training on suburban roads">
+        </div>
+        <div class="service-panel service-panel--dark">
+          <span class="service-eyebrow">Local route knowledge</span>
+          <h2>Edmondson Park lessons shaped around the roads learners actually face</h2>
+          <p>Students do better when practice matches the local driving environment. Lessons can gradually move from quieter residential roads into more complex conditions around Edmondson Park and the Liverpool area so students are not surprised by traffic flow, lane choices or common test-day pressure points.</p>
+          <ul class="service-route-list">
+            <li>Quiet starts for beginners before moving into busier local roads</li>
+            <li>Practice around Edmondson Park, Prestons, Horningsea Park, Denham Court and Leppington</li>
+            <li>Progression into higher-decision areas linked to Liverpool test preparation</li>
+            <li>Parking, roundabouts, lane discipline, hazard awareness and observation routines</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="trust">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <span class="section-heading__eyebrow">Trust and teaching approach</span>
+          <h2>Safe, local and structured from the first lesson</h2>
+          <p>Ashraf George teaches with a long-term view. The aim is not to squeeze learners through one test, it is to help them build habits that still serve them years later when they are driving on their own across Liverpool and South West Sydney.</p>
+        </div>
+        <div class="service-route-grid">
+          <article class="service-route-card">
+            <h3>Government-accredited instruction</h3>
+            <p>Lessons are delivered by a recognised instructor with current accreditation, compliant training standards and dual-controlled, fully insured automatic vehicles.</p>
+          </article>
+          <article class="service-route-card">
+            <h3>Calm lessons with less wasted driving</h3>
+            <p>Eco values on this page mean practical efficiency, not slogans. Lessons are planned around local routes and skill goals so time, fuel and learner energy are not wasted on random driving.</p>
+          </article>
+          <article class="service-route-card">
+            <h3>Real reassurance for parents and adults</h3>
+            <p>Parents, first-time learners and adult students can book knowing the instructor is police checked, Working With Children checked and focused on safe, repeatable habits.</p>
+          </article>
+        </div>
+        <div class="service-accreditation-grid" aria-label="Accreditation and membership logos">
+          <article class="service-accreditation-card">
+            <img src="../img/accreditation-2667.jpg" alt="Australian Driver Trainers Association accreditation">
+          </article>
+          <article class="service-accreditation-card">
+            <img src="../img/accreditation-3.jpg" alt="NSW driving instructor accreditation">
+          </article>
+          <article class="service-accreditation-card">
+            <img src="../img/accreditation-6.jpg" alt="Working with Children Check">
+          </article>
+          <article class="service-accreditation-card">
+            <img src="../img/accreditation-b6.jpg" alt="Transport for NSW related accreditation">
+          </article>
+          <article class="service-accreditation-card">
+            <img src="../img/accreditation-ba6.jpg" alt="NSW Safer Drivers Course provider logo">
+          </article>
+          <article class="service-accreditation-card">
+            <img src="../img/national police check-logo.jpg" alt="National Police Check logo">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="areas">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <span class="section-heading__eyebrow">Service area</span>
+          <h2>Areas around Edmondson Park we regularly cover</h2>
+          <p>Lessons can be arranged across the wider local catchment for students who want a familiar instructor and continuity as they build experience on nearby roads.</p>
+        </div>
+        <div class="service-area-grid">
+          <article>Edmondson Park</article>
+          <article>Prestons</article>
+          <article>Horningsea Park</article>
+          <article>Denham Court</article>
+          <article>Leppington</article>
+          <article>Austral</article>
+          <article>Catherine Field</article>
+          <article>Casula</article>
+          <article>Liverpool</article>
+          <article>Cecil Hills</article>
+          <article>Gregory Hills</article>
+          <article>Oran Park</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <span class="section-heading__eyebrow">FAQ</span>
+          <h2>Questions about driving lessons in Edmondson Park</h2>
+        </div>
+        <div class="service-faq-grid">
+          <article class="service-faq-item">
+            <h3>How much do driving lessons in Edmondson Park cost?</h3>
+            <p>Current lesson options start from $80 for one hour and $150 for two hours. Packages are available at $370 for 5 hours and $700 for 10 hours, which can suit learners who want consistent weekly progress.</p>
+          </article>
+          <article class="service-faq-item">
+            <h3>Do you offer automatic driving lessons?</h3>
+            <p>Yes. Lessons are provided in fully insured, dual-controlled automatic vehicles. This works well for beginners, nervous learners, adult students and most local driving test preparation.</p>
+          </article>
+          <article class="service-faq-item">
+            <h3>Can adults and overseas licence holders book lessons?</h3>
+            <p>Yes. Many students are adults returning to driving, people who did not learn as teenagers, or drivers adjusting to NSW road rules and local test expectations.</p>
+          </article>
+          <article class="service-faq-item">
+            <h3>Do lessons help with Liverpool driving test preparation?</h3>
+            <p>Yes. Lessons can include structured practice around local traffic conditions, manoeuvres, observation routines, lane selection and mock test sessions connected to the Liverpool test environment.</p>
+          </article>
+          <article class="service-faq-item">
+            <h3>How many lessons will I need before my test?</h3>
+            <p>That depends on your starting point, confidence, recent driving exposure and how consistently you practise. The first lesson usually makes the next-step plan clearer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta" id="final-cta">
+      <div class="container final-cta__layout">
+        <div class="final-cta__content">
+          <span class="section-heading__eyebrow">Book your first lesson</span>
+          <h2>Need driving lessons in Edmondson Park with a calmer, more structured approach?</h2>
+          <p>Book a first lesson with Ashraf George if you want local guidance, a clear plan and practical support that helps you feel more settled behind the wheel.</p>
+          <div class="final-cta__actions">
+            <a class="btn" href="https://sydneysouth.appointy.com/">Book driving lessons</a>
+            <a class="btn btn--ghost-light" href="tel:0287761815">Call now</a>
+          </div>
+        </div>
+        <div class="final-cta__media">
+          <img src="../img/driving-lessons-service-nsw-liverpool-orange-grove.jpg" alt="Driving school vehicle parked near local testing area">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <img src="../img/driving-lessons-liverpool-center-nsw.jpg" alt="Driving School Liverpool Centre">
+        <p>Structured automatic driving lessons for Liverpool, Edmondson Park and surrounding South West Sydney suburbs.</p>
+        <p><a href="tel:0287761815">(02) 8776 1815</a><br><a href="mailto:liverpool@sydneysouth.net">liverpool@sydneysouth.net</a><br>Liverpool NSW 2170</p>
+      </div>
+      <div>
+        <h3>About Us</h3>
+        <p><a href="../about-us/index.html">About Ashraf George</a></p>
+        <p><a href="../contact-us/index.html">Contact Us</a></p>
+        <p><a href="https://sydneysouth.appointy.com/">Book Driving Lesson</a></p>
+        <p><a href="../index.html#videos">Video Testimonials</a></p>
+      </div>
+      <div>
+        <h3>Service Pages</h3>
+        <p><a href="../index.html">Liverpool Driving Lessons</a></p>
+        <p><a href="./index.html">Driving Lessons Edmondson Park</a></p>
+        <p><a href="../index.html#packages">Lesson Packages</a></p>
+        <p><a href="../index.html#faq">Learner Driver FAQ</a></p>
+      </div>
+      <div>
+        <h3>Operating Hours</h3>
+        <p>Monday 7am-7pm</p>
+        <p>Tuesday 7am-7pm</p>
+        <p>Wednesday 7am-7pm</p>
+        <p>Thursday 7am-7pm</p>
+        <p>Friday 7am-7pm</p>
+        <p>Saturday 7am-7pm</p>
+        <p>Sunday 7am-7pm</p>
+        <img src="../img/Secure-Payment-Driving-Lesson_243x40.png" alt="Secure payment options for driving lessons">
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
