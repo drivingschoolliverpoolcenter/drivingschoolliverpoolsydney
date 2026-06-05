@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{CANONICAL_URL}}">
+  <meta property="og:title" content="{{OG_TITLE}}">
+  <meta property="og:description" content="{{OG_DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{CANONICAL_URL}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{OG_TITLE}}">
+  <meta name="twitter:description" content="{{OG_DESCRIPTION}}">
+  <meta name="twitter:image" content="{{OG_IMAGE}}">
+  <link rel="icon" type="image/png" href="img/driving-lessons-fav.png">
+  {{JSON_LD_BLOCK}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Duplicate this file, rename it to the new page slug, then replace the {{TOKENS}} only. -->
+  <!-- Keep the shared classes, spacing system, ids, button styles and js/main.js include intact. -->
+
+  <header class="site-header" id="top">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="{{BUSINESS_NAME}} home">
+        <img
+          class="brand__logo"
+          src="img/driving-lessons-liverpool-center.png"
+          alt="{{BUSINESS_NAME}}"
+          width="1254"
+          height="530"
+        >
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#coverage">Coverage</a>
+        <a href="#packages">Packages</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="header-link" href="{{HEADER_LINK_HREF}}">{{HEADER_LINK_LABEL}}</a>
+        <a class="btn btn--header" href="{{HEADER_BUTTON_HREF}}">{{HEADER_BUTTON_LABEL}}</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Required: hero -->
+    <section class="page-hero">
+      <div class="container page-hero__layout">
+        <div class="page-hero__content">
+          <p class="page-hero__eyebrow">{{HERO_EYEBROW}}</p>
+          <h1>{{HERO_HEADING}}</h1>
+          <p class="page-hero__lead">{{HERO_LEAD}}</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="{{PRIMARY_CTA_HREF}}">{{PRIMARY_CTA_LABEL}}</a>
+            <a class="btn btn--ghost" href="{{PHONE_CTA_HREF}}">{{PHONE_CTA_LABEL}}</a>
+            <a class="btn btn--ghost-light" href="{{SECONDARY_CTA_HREF}}">{{SECONDARY_CTA_LABEL}}</a>
+          </div>
+          <ul class="page-hero__meta">
+            <li>{{HERO_META_ONE}}</li>
+            <li>{{HERO_META_TWO}}</li>
+            <li>{{HERO_META_THREE}}</li>
+          </ul>
+        </div>
+
+        <figure class="page-hero__media">
+          <img
+            src="{{HERO_IMAGE}}"
+            alt="{{HERO_IMAGE_ALT}}"
+            width="1600"
+            height="1066"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <!-- Optional: keep this as a proof strip, swap in local proof points, or remove the entire section -->
+    <section class="section" id="proof">
+      <div class="container">
+        <div class="stat-strip">
+          <article class="stat-card">
+            <strong>{{STAT_ONE_VALUE}}</strong>
+            <p>{{STAT_ONE_LABEL}}</p>
+          </article>
+          <article class="stat-card">
+            <strong>{{STAT_TWO_VALUE}}</strong>
+            <p>{{STAT_TWO_LABEL}}</p>
+          </article>
+          <article class="stat-card">
+            <strong>{{STAT_THREE_VALUE}}</strong>
+            <p>{{STAT_THREE_LABEL}}</p>
+          </article>
+          <article class="stat-card">
+            <strong>{{STAT_FOUR_VALUE}}</strong>
+            <p>{{STAT_FOUR_LABEL}}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Required: brand, suburb or service positioning split -->
+    <section class="section" id="about">
+      <div class="container page-shell-grid">
+        <figure class="page-shell-media">
+          <img
+            src="{{ABOUT_IMAGE}}"
+            alt="{{ABOUT_IMAGE_ALT}}"
+            width="1600"
+            height="1066"
+          >
+        </figure>
+
+        <div class="page-shell-copy">
+          <p class="eyebrow">{{ABOUT_EYEBROW}}</p>
+          <h2>{{ABOUT_HEADING}}</h2>
+          <p>{{ABOUT_PARAGRAPH_ONE}}</p>
+          <p>{{ABOUT_PARAGRAPH_TWO}}</p>
+          <ul class="page-shell-points">
+            <li>{{ABOUT_POINT_ONE}}</li>
+            <li>{{ABOUT_POINT_TWO}}</li>
+            <li>{{ABOUT_POINT_THREE}}</li>
+          </ul>
+          <div class="section-actions">
+            <a class="btn btn--primary" href="{{ABOUT_CTA_HREF}}">{{ABOUT_CTA_LABEL}}</a>
+            <a class="btn btn--ghost-light" href="{{ABOUT_SECONDARY_CTA_HREF}}">{{ABOUT_SECONDARY_CTA_LABEL}}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Required: reusable service blocks -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow">{{SERVICES_EYEBROW}}</p>
+          <h2>{{SERVICES_HEADING}}</h2>
+          <p>{{SERVICES_INTRO}}</p>
+        </div>
+
+        <div class="topic-grid">
+          <article class="topic-card">
+            <h3>{{SERVICE_ONE_TITLE}}</h3>
+            <p>{{SERVICE_ONE_COPY}}</p>
+          </article>
+          <article class="topic-card">
+            <h3>{{SERVICE_TWO_TITLE}}</h3>
+            <p>{{SERVICE_TWO_COPY}}</p>
+          </article>
+          <article class="topic-card">
+            <h3>{{SERVICE_THREE_TITLE}}</h3>
+            <p>{{SERVICE_THREE_COPY}}</p>
+          </article>
+          <article class="topic-card">
+            <h3>{{SERVICE_FOUR_TITLE}}</h3>
+            <p>{{SERVICE_FOUR_COPY}}</p>
+          </article>
+          <article class="topic-card">
+            <h3>{{SERVICE_FIVE_TITLE}}</h3>
+            <p>{{SERVICE_FIVE_COPY}}</p>
+          </article>
+          <article class="topic-card">
+            <h3>{{SERVICE_SIX_TITLE}}</h3>
+            <p>{{SERVICE_SIX_COPY}}</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional but recommended: local route, suburb and test-centre context -->
+    <section class="section" id="coverage">
+      <div class="container page-shell-grid page-shell-grid--reverse">
+        <div class="page-shell-copy">
+          <p class="eyebrow">{{COVERAGE_EYEBROW}}</p>
+          <h2>{{COVERAGE_HEADING}}</h2>
+          <p>{{COVERAGE_PARAGRAPH_ONE}}</p>
+          <p>{{COVERAGE_PARAGRAPH_TWO}}</p>
+
+          <div class="route-grid">
+            <article class="route-card">
+              <h3>{{ROUTE_CARD_ONE_TITLE}}</h3>
+              <p>{{ROUTE_CARD_ONE_COPY}}</p>
+            </article>
+            <article class="route-card">
+              <h3>{{ROUTE_CARD_TWO_TITLE}}</h3>
+              <p>{{ROUTE_CARD_TWO_COPY}}</p>
+            </article>
+            <article class="route-card">
+              <h3>{{ROUTE_CARD_THREE_TITLE}}</h3>
+              <p>{{ROUTE_CARD_THREE_COPY}}</p>
+            </article>
+            <article class="route-card">
+              <h3>{{ROUTE_CARD_FOUR_TITLE}}</h3>
+              <p>{{ROUTE_CARD_FOUR_COPY}}</p>
+            </article>
+          </div>
+        </div>
+
+        <figure class="page-shell-media">
+          <img
+            src="{{COVERAGE_IMAGE}}"
+            alt="{{COVERAGE_IMAGE_ALT}}"
+            width="1600"
+            height="1066"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <!-- Optional: remove or duplicate cards as needed, but keep the shared pricing-card structure -->
+    <section class="section offers-section" id="packages">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow">{{PACKAGES_EYEBROW}}</p>
+          <h2>{{PACKAGES_HEADING}}</h2>
+          <p>{{PACKAGES_INTRO}}</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <p class="pricing-card__label">{{PACKAGE_ONE_LABEL}}</p>
+            <strong class="pricing-card__price">{{PACKAGE_ONE_PRICE}}</strong>
+            <h3>{{PACKAGE_ONE_TITLE}}</h3>
+            <p>{{PACKAGE_ONE_COPY}}</p>
+            <ul>
+              <li>{{PACKAGE_ONE_BULLET_ONE}}</li>
+              <li>{{PACKAGE_ONE_BULLET_TWO}}</li>
+              <li>{{PACKAGE_ONE_BULLET_THREE}}</li>
+            </ul>
+          </article>
+          <article class="pricing-card pricing-card--featured">
+            <p class="pricing-card__label">{{PACKAGE_TWO_LABEL}}</p>
+            <strong class="pricing-card__price">{{PACKAGE_TWO_PRICE}}</strong>
+            <h3>{{PACKAGE_TWO_TITLE}}</h3>
+            <p>{{PACKAGE_TWO_COPY}}</p>
+            <ul>
+              <li>{{PACKAGE_TWO_BULLET_ONE}}</li>
+              <li>{{PACKAGE_TWO_BULLET_TWO}}</li>
+              <li>{{PACKAGE_TWO_BULLET_THREE}}</li>
+            </ul>
+          </article>
+          <article class="pricing-card">
+            <p class="pricing-card__label">{{PACKAGE_THREE_LABEL}}</p>
+            <strong class="pricing-card__price">{{PACKAGE_THREE_PRICE}}</strong>
+            <h3>{{PACKAGE_THREE_TITLE}}</h3>
+            <p>{{PACKAGE_THREE_COPY}}</p>
+            <ul>
+              <li>{{PACKAGE_THREE_BULLET_ONE}}</li>
+              <li>{{PACKAGE_THREE_BULLET_TWO}}</li>
+              <li>{{PACKAGE_THREE_BULLET_THREE}}</li>
+            </ul>
+          </article>
+          <article class="pricing-card">
+            <p class="pricing-card__label">{{PACKAGE_FOUR_LABEL}}</p>
+            <strong class="pricing-card__price">{{PACKAGE_FOUR_PRICE}}</strong>
+            <h3>{{PACKAGE_FOUR_TITLE}}</h3>
+            <p>{{PACKAGE_FOUR_COPY}}</p>
+            <ul>
+              <li>{{PACKAGE_FOUR_BULLET_ONE}}</li>
+              <li>{{PACKAGE_FOUR_BULLET_TWO}}</li>
+              <li>{{PACKAGE_FOUR_BULLET_THREE}}</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Required if you want the current accordion JS to work -->
+    <section class="section faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="section-heading section-heading--center">
+          <p class="eyebrow">{{FAQ_EYEBROW}}</p>
+          <h2>{{FAQ_HEADING}}</h2>
+          <p>{{FAQ_INTRO}}</p>
+        </div>
+
+        <div class="faq-list faq-list--single">
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">
+              <span>{{FAQ_ONE_QUESTION}}</span>
+            </button>
+            <div class="faq-panel" hidden>
+              <p>{{FAQ_ONE_ANSWER}}</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">
+              <span>{{FAQ_TWO_QUESTION}}</span>
+            </button>
+            <div class="faq-panel" hidden>
+              <p>{{FAQ_TWO_ANSWER}}</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">
+              <span>{{FAQ_THREE_QUESTION}}</span>
+            </button>
+            <div class="faq-panel" hidden>
+              <p>{{FAQ_THREE_ANSWER}}</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button type="button" aria-expanded="false">
+              <span>{{FAQ_FOUR_QUESTION}}</span>
+            </button>
+            <div class="faq-panel" hidden>
+              <p>{{FAQ_FOUR_ANSWER}}</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Required: shared close CTA -->
+    <section class="section final-cta" id="final-cta">
+      <div class="container final-cta__panel">
+        <div class="final-cta__content">
+          <h2>{{FINAL_CTA_HEADING}}</h2>
+          <p>{{FINAL_CTA_COPY}}</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="{{FINAL_CTA_PRIMARY_HREF}}">{{FINAL_CTA_PRIMARY}}</a>
+            <a class="btn btn--ghost-light" href="{{FINAL_CTA_SECONDARY_HREF}}">{{FINAL_CTA_SECONDARY}}</a>
+          </div>
+        </div>
+
+        <figure class="final-cta__media">
+          <img
+            src="{{FINAL_CTA_IMAGE}}"
+            alt="{{FINAL_CTA_IMAGE_ALT}}"
+            width="1096"
+            height="822"
+          >
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="container footer-grid">
+      <div class="footer-column footer-column--contact">
+        <h3>Get In Touch</h3>
+        <div class="footer-contact-block">
+          <p class="footer-contact-block__label">{{FOOTER_CONTACT_LABEL}}</p>
+          <a href="{{PHONE_CTA_HREF}}">{{PRIMARY_PHONE_DISPLAY}}</a>
+          <p>{{FOOTER_CONTACT_COPY}}</p>
+        </div>
+        <div class="footer-contact-block">
+          <p class="footer-contact-block__label">{{FOOTER_SUPPORT_LABEL}}</p>
+          <a href="{{FOOTER_SUPPORT_HREF}}">{{FOOTER_SUPPORT_LINK_LABEL}}</a>
+          <p>{{FOOTER_SUPPORT_COPY}}</p>
+        </div>
+        <img
+          class="footer-brand__logo"
+          src="img/driving-lessons-liverpool-center-nsw.jpg"
+          alt="{{BUSINESS_NAME}}"
+          width="1254"
+          height="530"
+        >
+      </div>
+
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#coverage">Coverage</a></li>
+          <li><a href="#packages">Lesson Pricing</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Operating Hours</h3>
+        <ul class="footer-hours">
+          <li><span>Monday</span><span>7am-7pm</span></li>
+          <li><span>Tuesday</span><span>7am-7pm</span></li>
+          <li><span>Wednesday</span><span>7am-7pm</span></li>
+          <li><span>Thursday</span><span>7am-7pm</span></li>
+          <li><span>Friday</span><span>7am-7pm</span></li>
+          <li><span>Saturday</span><span>7am-7pm</span></li>
+          <li><span>Sunday</span><span>7am-7pm</span></li>
+        </ul>
+        <div class="footer-payments">
+          <p>Secure payment online with VISA, MASTERCARD, AMERICAN EXPRESS and PayPal</p>
+          <div class="footer-payment-badges" aria-label="Accepted payment methods">
+            <img
+              src="img/Secure-Payment-Driving-Lesson_243x40.png"
+              alt="Secure payment options including PayPal, Mastercard, Visa and American Express"
+              width="243"
+              height="40"
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3>Driving Test Centres We Service</h3>
+        <ul class="footer-links">
+          <li><a href="#coverage">{{TEST_CENTRE_ONE}}</a></li>
+          <li><a href="#coverage">{{TEST_CENTRE_TWO}}</a></li>
+          <li><a href="#coverage">{{TEST_CENTRE_THREE}}</a></li>
+          <li><a href="#coverage">{{TEST_CENTRE_FOUR}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
