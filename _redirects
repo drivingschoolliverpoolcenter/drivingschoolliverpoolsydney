@@ -5,16 +5,11 @@
 # Order: most specific first. Cloudflare Pages stops at the first match.
 # =============================================================================
 
-# -----------------------------------------------------------------------------
-# 1. www → canonical non-www
-#    Requires www.drivingschoolliverpool.sydney to be added as a Custom Domain
-#    in Pages > Domains alongside the root domain.
-#    This single rule resolves 79% of crawl budget misdirection.
-# -----------------------------------------------------------------------------
-https://www.drivingschoolliverpool.sydney/* https://drivingschoolliverpool.sydney/:splat 301
+# NOTE: www → non-www redirect is handled by Cloudflare Bulk Redirects at the
+# account level (not here). Workers Assets _redirects only allows relative paths.
 
 # -----------------------------------------------------------------------------
-# 2. /index.html → clean root URL
+# 1. /index.html → clean root URL
 # -----------------------------------------------------------------------------
 /index.html / 301
 
