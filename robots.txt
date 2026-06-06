@@ -1,12 +1,20 @@
 User-agent: *
 Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /img/
 
-Disallow: /CLAUDE.md
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /xmlrpc.php
 Disallow: /templates/
+Disallow: /CLAUDE.md
 Disallow: /skill-main/
 Disallow: /taste-skill-main/
 Disallow: /Impeccable-skill/
 Disallow: /SKILL.md
 Disallow: /.claude/
 
-Sitemap: https://www.drivingschoolliverpool.sydney/sitemap.xml
+Sitemap: https://drivingschoolliverpool.sydney/sitemap.xml

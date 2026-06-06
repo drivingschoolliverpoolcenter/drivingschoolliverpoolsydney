@@ -1,0 +1,45 @@
+# =============================================================================
+# Cloudflare Pages _headers
+# https://developers.cloudflare.com/pages/configuration/headers/
+# Cloudflare handles HTTPS, Brotli compression and HSTS automatically.
+# These rules add security headers and long-term caching for static assets.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Security headers — all pages
+# -----------------------------------------------------------------------------
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+
+# -----------------------------------------------------------------------------
+# Long-term immutable caching — versioned static assets
+# Images, fonts, CSS and JS are content-hashed/versioned in deployment.
+# 1-year cache with immutable directive.
+# -----------------------------------------------------------------------------
+/img/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# -----------------------------------------------------------------------------
+# HTML pages — no-cache so updates deploy immediately
+# -----------------------------------------------------------------------------
+/*.html
+  Cache-Control: no-cache, must-revalidate
+
+# -----------------------------------------------------------------------------
+# Crawler files — short TTL so updates are picked up quickly
+# -----------------------------------------------------------------------------
+/robots.txt
+  Cache-Control: public, max-age=3600
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600

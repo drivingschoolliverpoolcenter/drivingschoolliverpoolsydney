@@ -1,0 +1,90 @@
+# =============================================================================
+# Cloudflare Pages _redirects
+# https://developers.cloudflare.com/pages/configuration/redirects/
+# All rules are 301 Permanent unless noted.
+# Order: most specific first. Cloudflare Pages stops at the first match.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. www → canonical non-www
+#    Requires www.drivingschoolliverpool.sydney to be added as a Custom Domain
+#    in Pages > Domains alongside the root domain.
+#    This single rule resolves 79% of crawl budget misdirection.
+# -----------------------------------------------------------------------------
+https://www.drivingschoolliverpool.sydney/* https://drivingschoolliverpool.sydney/:splat 301
+
+# -----------------------------------------------------------------------------
+# 2. /index.html → clean root URL
+# -----------------------------------------------------------------------------
+/index.html / 301
+
+# -----------------------------------------------------------------------------
+# 3. Subdirectory /*/index.html → clean trailing-slash URL
+# -----------------------------------------------------------------------------
+/about-us/index.html /about-us/ 301
+/contact-us/index.html /contact-us/ 301
+/automatic-driving-lessons/index.html /automatic-driving-lessons/ 301
+/driving-lessons-chipping-norton/index.html /driving-lessons-chipping-norton/ 301
+/driving-lessons-edmondson-park/index.html /driving-lessons-edmondson-park/ 301
+/cancellation-policy/index.html /cancellation-policy/ 301
+/terms-and-conditions/index.html /terms-and-conditions/ 301
+/australian-business-number-abn/index.html /australian-business-number-abn/ 301
+/learner-referral-program-terms-and-conditions/index.html /learner-referral-program-terms-and-conditions/ 301
+/review-policy/index.html /review-policy/ 301
+/our-services/index.html /our-services/ 301
+/beginner-driving-lessons-liverpool/index.html /beginner-driving-lessons-liverpool/ 301
+/certified-to-work-with-children/index.html /certified-to-work-with-children/ 301
+
+# -----------------------------------------------------------------------------
+# 4. WordPress system paths → homepage
+#    Blocks probing bots and prevents 404 churn on non-existent WP paths.
+# -----------------------------------------------------------------------------
+/wp-admin/* / 301
+/wp-login.php / 301
+/wp-content/* / 301
+/wp-includes/* / 301
+/xmlrpc.php / 301
+
+# -----------------------------------------------------------------------------
+# 5. WordPress post slugs → homepage (301)
+#    164 clicks + 42,365 impressions over 3 months on these slugs.
+#    Explicit per-slug rules are a safety net independent of the www redirect.
+# -----------------------------------------------------------------------------
+/liverpool-nsw-average-price-for-driving-lessons/ / 301
+/city-of-liverpool-nsw-female-driving-instructors-near-me/ / 301
+/liverpool-nsw-cheapest-driving-lessons-2/ / 301
+/liverpool-nsw-2170-cheapest-driving-lessons/ / 301
+/liverpool-nsw-2170-driving-test-route-nsw/ / 301
+/liverpool-village-nsw-driving-school-rates/ / 301
+/driving-school-near-me-in-austral-nsw-2179/ / 301
+/liverpool-centre-nsw-cheapest-driving-lessons/ / 301
+/best-driving-instructors-liverpool-council/ / 301
+/driving-lessons-prices-liverpool-community-nsw/ / 301
+/driving-lessons-liverpool/ / 301
+/gregory-hills-driving-test-route-liverpool/ / 301
+/light-rigid-truck-bus-licence-questions/ / 301
+/liverpool-western-sydney-gregory-hills-driving-test-route/ / 301
+/liverpool-nsw-2170-gregory-hills-driving-test-route/ / 301
+/liverpool-suburbs-driving-lessons-for-anxious-drivers-near-me/ / 301
+/liverpool-nsw-safer-drivers-course/ / 301
+/average-price-for-driving-lessons-liverpool/ / 301
+/liverpool-australia-cheapest-driving-lessons/ / 301
+/liverpool-nsw-2170-driving-course/ / 301
+/book-driving-lesson/ / 301
+/refresher-driving-lessons-near-me-liverpool-council/ / 301
+/westfield-liverpool-shopping-centre-driving-packages/ / 301
+/liverpool-area-safer-drivers-course/ / 301
+/liverpool-municipality-nsw-professional-driving-lessons/ / 301
+/code-of-conduct/ / 301
+/private-driving-instructors-near-me-liverpool-community-nsw/ / 301
+/crash-course-driving-lessons-near-me-liverpool-community-nsw/ / 301
+/cheapest-driving-lessons-liverpool-community-nsw/ / 301
+/driving-test-route-liverpool-community-nsw/ / 301
+/liverpool-centre-nsw-gregory-hills-driving-test-route/ / 301
+/liverpool-city-council-expert-driving-lessons-test/ / 301
+/driving-school-near-me-in-badgerys-creek-nsw-2555/ / 301
+
+# -----------------------------------------------------------------------------
+# 6. WordPress post slug → about-us (thematic match)
+# -----------------------------------------------------------------------------
+/liverpool-city-council-australia-driving-school/ /about-us/ 301
