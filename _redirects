@@ -19,6 +19,7 @@
 #    These explicit rules override that with a 301 Permanent Redirect so Google
 #    receives a definitive canonical signal without a temporary hint.
 # -----------------------------------------------------------------------------
+/driving-instructors-liverpool /driving-instructors-liverpool/ 301
 /about-us /about-us/ 301
 /contact-us /contact-us/ 301
 /automatic-driving-lessons /automatic-driving-lessons/ 301
@@ -39,6 +40,7 @@
 # -----------------------------------------------------------------------------
 # 3. Subdirectory /*/index.html → clean trailing-slash URL
 # -----------------------------------------------------------------------------
+/driving-instructors-liverpool/index.html /driving-instructors-liverpool/ 301
 /about-us/index.html /about-us/ 301
 /contact-us/index.html /contact-us/ 301
 /automatic-driving-lessons/index.html /automatic-driving-lessons/ 301
