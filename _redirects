@@ -14,6 +14,29 @@
 /index.html / 301
 
 # -----------------------------------------------------------------------------
+# 2. No-trailing-slash → trailing-slash (permanent 301)
+#    Cloudflare Pages auto-adds trailing slashes with a 307 Temporary Redirect.
+#    These explicit rules override that with a 301 Permanent Redirect so Google
+#    receives a definitive canonical signal without a temporary hint.
+# -----------------------------------------------------------------------------
+/about-us /about-us/ 301
+/contact-us /contact-us/ 301
+/automatic-driving-lessons /automatic-driving-lessons/ 301
+/driving-lessons-chipping-norton /driving-lessons-chipping-norton/ 301
+/driving-lessons-edmondson-park /driving-lessons-edmondson-park/ 301
+/beginner-driving-lessons-liverpool /beginner-driving-lessons-liverpool/ 301
+/our-services /our-services/ 301
+/certified-to-work-with-children /certified-to-work-with-children/ 301
+/privacy-policy /privacy-policy/ 301
+/payment-policy /payment-policy/ 301
+/refund-policy /refund-policy/ 301
+/cancellation-policy /cancellation-policy/ 301
+/terms-and-conditions /terms-and-conditions/ 301
+/australian-business-number-abn /australian-business-number-abn/ 301
+/learner-referral-program-terms-and-conditions /learner-referral-program-terms-and-conditions/ 301
+/review-policy /review-policy/ 301
+
+# -----------------------------------------------------------------------------
 # 3. Subdirectory /*/index.html → clean trailing-slash URL
 # -----------------------------------------------------------------------------
 /about-us/index.html /about-us/ 301
